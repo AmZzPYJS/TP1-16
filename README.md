@@ -54,7 +54,10 @@ Dans cet exercice, vous créerez une classe `Fraction` représentant un nombre r
    Vous utiliserez le protocole `https` pour cela;
    Vérifiez avec le navigateur;
     ```bash
-    # Commandes pour publier les modifications
+    git remote add origin git@persee.prism.uvsq.fr:tp1/16.git
+    git branch -M main
+    git push -u origin main
+   # Le push echoue (permission denied) j'ai resoumis une demande de validation de clé SSH
     ```
 1. Sur la forge, ajoutez un fichier de documentation `README.md`.
    Quelle syntaxe est utilisée pour ce fichier ?
