@@ -37,7 +37,19 @@ Dans cet exercice, vous créerez une classe `Fraction` représentant un nombre r
 1. Ajoutez la méthode `toString` à la classe `Fraction` (cf. [`Object.toString`](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html#toString())) qui retournera la chaîne `"Je suis une fraction."` et modifiez la classe `Main` en conséquence;
    Validez les changements;
     ```Java
-    ```
+      public class Fraction {
+         public String toString() {
+            return "Je suis une fraction.";
+         }
+      }
+          
+      public class Main {
+         public static void main(String[] args) {
+            Fraction f = new Fraction();
+            assert f.toString().equals("Je suis une fraction.");
+         }
+      }
+   ```
 1. Publiez vos modifications sur le dépôt distant (cf. [Travailler avec des dépôts distants](https://git-scm.com/book/fr/v2/Les-bases-de-Git-Travailler-avec-des-d%C3%A9p%C3%B4ts-distants));
    Vous utiliserez le protocole `https` pour cela;
    Vérifiez avec le navigateur;

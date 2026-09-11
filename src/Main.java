@@ -1,5 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("test");
+        Fraction f = new Fraction();
+        assert f.toString().equals("Je suis une fraction.");
     }
 }
