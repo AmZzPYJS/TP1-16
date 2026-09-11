@@ -65,7 +65,8 @@ Dans cet exercice, vous créerez une classe `Fraction` représentant un nombre r
      la coloration syntaxique.
 1. Récupérez localement les modifications effectuées sur la forge.
     ```bash
-    # Répondre ici
+    git pull origin main
+    # Already up to date (aucune modification distante à récupérer au moment du test)
     ```
 1. Ajoutez les répertoires et fichiers issus de la compilation aux fichiers ignorés par `git` (cf. [`.gitignore` pour Java](https://github.com/github/gitignore/blob/main/Java.gitignore));
     ```bash
