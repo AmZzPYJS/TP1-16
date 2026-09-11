@@ -1,6 +1,8 @@
 *.class
 *.log
 *.ctxt
+
+.idea/
 .mtj.tmp/
 
 *.jar

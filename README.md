@@ -70,11 +70,27 @@ Dans cet exercice, vous créerez une classe `Fraction` représentant un nombre r
     ```
 1. Ajoutez les répertoires et fichiers issus de la compilation aux fichiers ignorés par `git` (cf. [`.gitignore` pour Java](https://github.com/github/gitignore/blob/main/Java.gitignore));
     ```bash
-    # Copier ici le contenu de `.gitignore`
+     *.class
+     *.log
+     *.ctxt
+
+     .idea/
+     .mtj.tmp/
+
+     *.jar
+     *.war
+     *.nar
+     *.ear
+     *.zip
+     *.tar.gz
+     *.rar
+
+     hs_err_pid*
+     replay_pid*
     ```
 1. Retirez les fichiers de configuration de l'IDE du projet;
     ```bash
-    # Répondre ici
+    git rm --cached -r .idea/
     ```
    Ajoutez-les aux fichiers ignorés par `git`.
     ```bash
