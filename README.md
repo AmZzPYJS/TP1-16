@@ -94,10 +94,12 @@ Dans cet exercice, vous créerez une classe `Fraction` représentant un nombre r
     ```
    Ajoutez-les aux fichiers ignorés par `git`.
     ```bash
-    # Copier ici les modifications de `.gitignore`
+    .idea/
     ```
 1. Configurez l'accès par clé publique/clé privée à la forge (cf. [Connecting to GitHub with SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)).
-   > Expliquez la procédure de façon synthétique
+   > Génération de clé SSH, ssh-keygen -t ed25519 -f ~/.ssh/cplprog. Une clé privée et une clé publique ont été générée et nous transmettons la clé publique au serveur
+   Clé activée par l'enseignant
+   Authentification fait avec la commande `ssh -i ~/.ssh/cplprog git@persee.prism.uvsq.fr`
 
 ## Partie II (à faire durant le TD) : compléter la classe `Fraction`
 Dans cet partie, vous compléterez les classes `Fraction` et `Main`.
