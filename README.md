@@ -61,7 +61,8 @@ Dans cet exercice, vous créerez une classe `Fraction` représentant un nombre r
     ```
 1. Sur la forge, ajoutez un fichier de documentation `README.md`.
    Quelle syntaxe est utilisée pour ce fichier ?
-   > Répondre ici
+    > Syntaxe Markdown avec précision du ```langage``` pour un bloc de code avec 
+     la coloration syntaxique.
 1. Récupérez localement les modifications effectuées sur la forge.
     ```bash
     # Répondre ici
