@@ -91,7 +91,23 @@ Vous respecterez les consignes ci-dessous :
 
 1. Ajoutez les attributs représentants le numérateur et le dénominateur (nombres entiers).
     ```Java
-    // Déclaration des attributs
+   public class Fraction {
+        private int numerateur;
+        private int denominateur;
+
+        public Fraction(int numerateur, int denominateur) {
+            this.numerateur = numerateur;
+            this.denominateur = denominateur;
+            }
+
+            public Fraction(int numerateur) {
+                this(numerateur, 1);
+            }
+
+        public Fraction() {
+            this(0, 1);
+            }
+        }
     ```
 1. Ajoutez les constructeurs (cf. [Constructor Declarations](https://docs.oracle.com/javase/specs/jls/se19/html/jls-8.html#jls-8.8)) suivants :
     * initialisation avec un numérateur et un dénominateur,
