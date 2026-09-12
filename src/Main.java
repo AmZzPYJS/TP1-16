@@ -19,5 +19,10 @@ public class Main {
         assert f1.doubleValue() == 0.75;
         assert f2.doubleValue() == 5.0;
         assert f3.doubleValue() == 0.0;
+
+        Fraction a = new Fraction(1, 2);
+        Fraction b = new Fraction(1, 3);
+        Fraction sum = a.add(b);
+        assert sum.getNumerateur() == 5 && sum.getDenominateur() == 6;
     }
 }

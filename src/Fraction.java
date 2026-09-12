@@ -34,4 +34,13 @@ public class Fraction {
         return (double) numerateur / denominateur;
     }
 
+    public Fraction add(Fraction other) {
+        int num = this.numerateur * other.denominateur
+                + other.numerateur * this.denominateur;
+
+        int den = this.denominateur * other.denominateur;
+
+        return new Fraction(num, den);
+    }
+
 }

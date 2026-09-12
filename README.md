@@ -159,8 +159,15 @@ Vous respecterez les consignes ci-dessous :
     ```
 1. Ajoutez une méthode permettant l'addition de deux fractions (la méthode `add` prend en paramètre *une* fraction et *retourne* la somme de la fraction courante et du paramètre),
    ```Java
-    // Assertions pour tester l'addition
-    ```
+     public Fraction add(Fraction other) {
+         int num = this.numerateur * other.denominateur
+         + other.numerateur * this.denominateur;
+
+         int den = this.denominateur * other.denominateur;
+
+         return new Fraction(num, den);}
+   ```
+
 1. Ajoutez le test d'égalité entre fractions (deux fractions sont égales si elles représentent la même fraction réduite) (cf. [`java.lang.Object.equals`](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object))),
    ```Java
     // Assertions pour tester l'égalité
