@@ -254,28 +254,28 @@ Vous pouvez choisir l'IDE/éditeur de texte de votre choix.
 Pour réaliser cette exercice, vous devez bien évidemment vous reporter à la documentations de l'IDE ([IntelliJ IDEA](https://www.jetbrains.com/help/idea/discover-intellij-idea.html#developer-tools), [Visual Studio Code](https://code.visualstudio.com/docs), [Eclipse](https://help.eclipse.org/2020-09/index.jsp), …).
 
 1. Quels IDE ou éditeurs de texte utilisez-vous pour le développement Java ?
-   > Répondre ici
+   > J'utilise IntelliJ IDEA (pour ce TP) et Android Studio (pour le développement d'application mobile) pour le développement Java
 
    Pour la suite, ne considérez que l'un de vos choix.
 1. Comment vérifier/définir que l'encodage utilisé est *UTF-8* ?
-   > Répondre ici
+   > `File` → `Settings` → `Editor` → `File Encodings`. On y définit l'encodage global et l'encodage du projet. Chez moi, c'est bien configuré en UTF-8.
 1. Comment choisir le JDK à utiliser dans un projet ?
-   > Répondre ici
+   > `File` → `Project Structure` → `Project` → `Project SDK`. Et on sélectionne le JDK associé au projet (chez moi : Java 25).
 1. Comment préciser la version Java des sources dans un projet ?
-   > Répondre ici
+   > `File` → `Project Structure` → `Project` → `Project language level` → `Sources` → `Language level`. Permet de définir la version de syntaxe Java autorisée dans le code source.
 1. Comment ajouter une bibliothèque externe dans un projet ?
-   > Répondre ici
+   > `File` → `Project Structure` → `Libraries` → `+` → `Java` → sélectionner le fichier `.jar` de la bibliothèque externe. Une fois ajoutée, elle devient utilisable via import dans le code.
 1. Comment reformater un fichier source Java ?
-   > Répondre ici
+   > raccourci : `Ctrl+Alt+L`. Reformate automatiquement l'indentation, les espaces et la mise en forme du fichier.
 1. Comment trouver la déclaration d'une variable ou méthode ?
-   > Répondre ici
+   > `Ctrl + clic` sur le nom de la variable/méthode et ça amène directement à l'endroit ou l'élément est déclaré
 1. Comment insérer un bloc de code prédéfini (*snippet*) ?
-   > Répondre ici
+   > On tape le nom du snippet puis on appuie sur `Tab` pour l'insérer automatiquement complété.
 1. Comment renommer une classe dans l'ensemble du projet ?
-   > Répondre ici
+   > `Shift + F6`. Renommage et mise à jour automatiquement toutes les références à cette classe dans le projet.
 1. Comment exécuter le programme en lui passant un paramètre en ligne de commande ?
-   > Répondre ici
+   > `Run` → `Edit Configurations` → champ `Program Arguments`. Les valeurs saisies y sont transmises au tableau `String[] args` de la méthode `main`.
 1. Comment déboguer le programme en visualisant le contenu d'une ou plusieurs variables ?
-   > Répondre ici
+   > On clic dans la marge, à gauche du numéro de ligne, puis on lance avec `Run` → `Debug. Une fois l'exécution arrêtée, le panneau de débogage affiche les variables locales, leur valeur, et permet d'inspecter le contenu des objets.
 1. Quels paramètres ou fonctionnalités vous semblent particulièrement importants/utiles pour le développement Java ?
-   > Répondre ici
+   > L'Auto‑formatage du code pour garder le code propre et lisible, ce qui est essentiel quand je gères à la fois le backend Java et le frontend de mon site. Ensuite il y a aussi la navigation rapide dans le projet me permettant de retrouver instantanément une classe, une méthode ou un fichier. Et enfin, l'exécution et configuration du projet. Ce qui facilite le lancement du backend, les tests d’API et l’intégration avec le frontend, sans perdre de temps dans les réglages techniques.
