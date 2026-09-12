@@ -8,5 +8,12 @@ public class Main {
 
         Fraction f3 = new Fraction();
         assert f3.toString().equals("0/1");
+
+        assert Fraction.ZERO.toString().equals("0/1");
+        assert Fraction.UN.toString().equals("1/1");
+
+        Fraction f = new Fraction(3, 4);
+        assert f.getNumerateur() == 3;
+        assert f.getDenominateur() == 4;
     }
 }
