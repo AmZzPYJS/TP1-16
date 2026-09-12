@@ -1,4 +1,4 @@
-public class Fraction {
+public class Fraction implements Comparable<Fraction> {
     private int numerateur;
     private int denominateur;
 
@@ -18,6 +18,7 @@ public class Fraction {
         this(0, 1);
     }
 
+    @Override
     public String toString() {
         return numerateur + "/" + denominateur;
     }
@@ -53,5 +54,11 @@ public class Fraction {
         return this.numerateur * other.denominateur ==
                 other.numerateur * this.denominateur;
     }
+
+    @Override
+    public int compareTo(Fraction other) {
+        int left = this.numerateur * other.denominateur;
+        int right = other.numerateur * this.denominateur;
+        return Integer.compare(left, right);}
 
 }
