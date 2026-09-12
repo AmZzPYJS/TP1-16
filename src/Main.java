@@ -15,5 +15,9 @@ public class Main {
         Fraction f = new Fraction(3, 4);
         assert f.getNumerateur() == 3;
         assert f.getDenominateur() == 4;
+
+        assert f1.doubleValue() == 0.75;
+        assert f2.doubleValue() == 5.0;
+        assert f3.doubleValue() == 0.0;
     }
 }
