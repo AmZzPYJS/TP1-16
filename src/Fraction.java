@@ -43,4 +43,15 @@ public class Fraction {
         return new Fraction(num, den);
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+
+        Fraction other = (Fraction) obj;
+
+        return this.numerateur * other.denominateur ==
+                other.numerateur * this.denominateur;
+    }
+
 }

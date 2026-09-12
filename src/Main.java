@@ -24,5 +24,14 @@ public class Main {
         Fraction b = new Fraction(1, 3);
         Fraction sum = a.add(b);
         assert sum.getNumerateur() == 5 && sum.getDenominateur() == 6;
+
+        Fraction c1 = new Fraction(1, 2);
+        Fraction c2 = new Fraction(2, 4);
+        assert c1.equals(c2);
+
+        Fraction c3 = new Fraction(1, 3);
+        assert !c1.equals(c3);
     }
+
+
 }
