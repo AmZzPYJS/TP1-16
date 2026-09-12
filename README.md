@@ -240,13 +240,13 @@ Pour répondre à ces questions, vous devez effectuer les recherches documentair
         ```
 1. Expliquez en une ou deux phrases le rôle de ces commandes et dans quel contexte elles peuvent être utiles pour un développeur.
     * `ssh`
-      > Répondre ici
+      > `ssh` permet de se connecter à un serveur distant de manière sécurisée.
     * `screen`/`tmux`
-      > Répondre ici
+      > `screen`/`tmux` permettent de créer des sessions de terminal qui continuent à tourner même si la connexion SSH se coupe. Utile pour lancer des scripts longs ou gérer plusieurs environnements dans un seul terminal, notamment.
     * `curl`/[HTTPie](https://httpie.org/)
-      > Répondre ici
+      > `curl`/HTTPie envoient des requêtes HTTP depuis le terminal pour tester des API, vérifier des endpoints et automatiser des appels réseau, indispensable pour les développeurs backend (c'est mon cas pour farmora.app).
     * [jq](https://stedolan.github.io/jq/)
-      > Répondre ici
+      > `jq` est un outil qui permet de filtrer et transformer du JSON directement en ligne de commande, utile pour analyser les réponses d'API et manipuler des données structurées, notamment.
 
 ### Découverte de votre *IDE*
 Dans cet exercice, vous expliquerez en quelques phrases comment vous réalisez les actions ci-dessous dans votre IDE.
