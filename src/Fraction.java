@@ -1,4 +1,4 @@
-public class Fraction implements Comparable<Fraction> {
+public class Fraction extends Number implements Comparable<Fraction> {
     private int numerateur;
     private int denominateur;
 
@@ -60,5 +60,20 @@ public class Fraction implements Comparable<Fraction> {
         int left = this.numerateur * other.denominateur;
         int right = other.numerateur * this.denominateur;
         return Integer.compare(left, right);}
+
+    @Override
+    public int intValue() {
+        return (int) doubleValue();
+    }
+
+    @Override
+    public long longValue() {
+        return (long) doubleValue();
+    }
+
+    @Override
+    public float floatValue() {
+        return (float) doubleValue();
+    }
 
 }

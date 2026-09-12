@@ -37,6 +37,10 @@ public class Main {
         assert d1.compareTo(d2) < 0;   // 1/2 < 2/3
         assert d2.compareTo(d1) > 0;   // 2/3 > 1/2
         assert d1.compareTo(d1) == 0;  // égal à lui-même
+
+        Number aNumber = java.math.BigDecimal.ONE;
+        Number anotherNumber = new Fraction(1, 2);
+        assert java.lang.Math.abs(aNumber.doubleValue() + anotherNumber.doubleValue() - 1.5) < 1E-8;
     }
 
 
